@@ -76,3 +76,59 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+function showEmployer(n){
+    if(n == 1){
+        document.getElementById('emp2').style.display = "none";
+        document.getElementById('emp3').style.display = "none";
+        document.getElementById('emp4').style.display = "none";
+    }
+    if(n == 2){
+        document.getElementById('emp2').style.display = "block";
+        document.getElementById('emp3').style.display = "none";
+        document.getElementById('emp4').style.display = "none";
+    }
+    if(n == 3){
+        document.getElementById('emp2').style.display = "block";
+        document.getElementById('emp3').style.display = "block";
+        document.getElementById('emp4').style.display = "none";
+    }
+    if(n == 4){
+        document.getElementById('emp2').style.display = "block";
+        document.getElementById('emp3').style.display = "block";
+        document.getElementById('emp4').style.display = "block";
+    }
+}
+
+function showGap(n){
+    if(n == 1){
+        document.getElementById('gap2').style.display = "none";
+        document.getElementById('gap3').style.display = "none";
+    }
+    if(n == 2){
+        document.getElementById('gap2').style.display = "block";
+        document.getElementById('gap3').style.display = "none";
+    }
+    if(n == 3){
+        document.getElementById('gap2').style.display = "block";
+        document.getElementById('gap3').style.display = "block";
+    }
+
+}
+
+function show_accident(n){
+    if(n == 1){
+        document.getElementById('accident2').style.display = "none";
+        document.getElementById('accident3').style.display = "none";
+    }
+    if(n == 2){
+        document.getElementById('accident2').style.display = "block";
+        document.getElementById('accident3').style.display = "none";
+    }
+    if(n == 3){
+        document.getElementById('accident2').style.display = "block";
+        document.getElementById('accident3').style.display = "block";
+    }
+
+}
+
